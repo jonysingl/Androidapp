@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- 商品图片 -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+         />
+
+    <!-- 商品名称 -->
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Product Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- 商品价格 -->
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Price: $100"
+        android:textSize="16sp"
+        android:textColor="#FF5722" />
+    <!-- 商品价格 -->
+    <TextView
+        android:id="@+id/textViewProductId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Id:"
+        android:textSize="16sp"
+        android:textColor="#FF5722" />
+
+    <!-- 商家名称 -->
+    <TextView
+        android:id="@+id/textViewSellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Seller: John Doe"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <!-- 购买者名称 -->
+    <TextView
+        android:id="@+id/textViewBuyerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Buyer: Jane Smith"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <!-- 订单编号 -->
+    <TextView
+        android:id="@+id/textViewOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Order ID: 123456789"
+        android:textSize="14sp"
+        android:textColor="#555555" />
+
+    <!-- 按钮容器 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- 立即支付按钮 -->
+        <Button
+            android:id="@+id/buttonPayNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Pay Now"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+
+        <!-- 取消订单按钮 -->
+        <Button
+            android:id="@+id/buttonCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Order"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

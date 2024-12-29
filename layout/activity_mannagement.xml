@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- 搜索框和搜索按钮 -->
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称："
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_search_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="请输入商品名称"
+            android:inputType="text"
+            android:padding="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="搜索"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <!-- 商品信息列表 -->
+
+    <!-- 增加商品按钮 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_add_product"
+        android:layout_below="@id/searchLayout"
+        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="21dp"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btn_add_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="增加商品"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

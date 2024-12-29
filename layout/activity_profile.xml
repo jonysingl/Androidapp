@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#F1F8E9">
+
+    <!-- 用户头像和用户名 -->
+    <LinearLayout
+        android:id="@+id/userInfoLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 头像 -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/defaut_avatar"
+            android:contentDescription="头像"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- 编辑个人信息、查看已发布商品、查看已购买商品、应用信息 -->
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/userInfoLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 查看个人信息 -->
+        <Button
+            android:id="@+id/buttonViewPersonalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看个人信息"
+            android:background="#FDF3E6"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+
+        <!-- 查看已发布商品 -->
+        <Button
+            android:id="@+id/buttonViewPostedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看已发布商品"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 新增商品功能 -->
+        <Button
+            android:id="@+id/buttonAddProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="增加商品"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 查看已购买商品 -->
+        <Button
+            android:id="@+id/buttonViewPurchasedItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看已购买商品"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 应用信息 -->
+        <Button
+            android:id="@+id/buttonAppInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用信息"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="8dp" />
+        <!-- 管理员功能 -->
+        <Button
+            android:id="@+id/buttonAdminFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理员功能"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 退出登录按钮 -->
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:background="#FF6347"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <!-- 底部按钮区域 -->
+    <LinearLayout
+        android:id="@+id/bottomNavigationLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <!-- 主页按钮 -->
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zhuye"
+            android:textSize="16sp"
+            android:layout_marginLeft="100dp"/>
+
+        <!-- 个人中心按钮 -->
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/geren"
+            android:textSize="16sp"
+            android:layout_marginLeft="140dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

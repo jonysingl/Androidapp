@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/editTextSellerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="卖家昵称"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 商品名称输入框 -->
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品名称"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 商品描述输入框 -->
+    <EditText
+        android:id="@+id/editTextProductDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品描述"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 商品价格输入框 -->
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="商品价格"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 商品类别选择下拉框 -->
+    <Spinner
+        android:id="@+id/spinnerProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <!-- 商品图片上传按钮 -->
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传商品图片"
+        android:layout_marginTop="16dp" />
+
+    <!-- 显示选中的商品图片 -->
+    <ImageView
+        android:id="@+id/imageViewProductImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/defaut_avatar" />
+
+    <!-- 提交按钮 -->
+    <Button
+        android:id="@+id/buttonSubmitProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交商品"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>

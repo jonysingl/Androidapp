@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- 订单成功提示文本 -->
+    <TextView
+        android:id="@+id/textViewSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Successful"
+        android:textSize="18sp"
+        android:textColor="#28a745"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- 显示订单编号 -->
+    <TextView
+        android:id="@+id/textViewOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Number: XXXX"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"/>
+
+    <!-- 返回主页按钮 -->
+    <Button
+        android:id="@+id/buttonGoHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to Home"
+        android:textSize="16sp"
+        android:backgroundTint="#28a745"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- 查看订单按钮 -->
+    <Button
+        android:id="@+id/buttonViewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Orders"
+        android:textSize="16sp"
+        android:backgroundTint="#007bff"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

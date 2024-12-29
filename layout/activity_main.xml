@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 搜索框 -->
+    <LinearLayout
+        android:id="@+id/llSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="#f0f0f0"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="搜索商品"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/search"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 分类 TabLayout -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:tabMode="fixed"
+        app:tabGravity="fill">
+
+        <!-- 添加 "全部商品" 分类 Tab -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItemAll"
+            android:text="全部商品"
+            android:layout_height="0dp"
+            android:layout_width="0dp" />
+
+        <!-- 其他分类标签 -->
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem1"
+            android:text="电子产品"
+            android:layout_height="0dp"
+            android:layout_width="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem2"
+            android:text="家具"
+            android:layout_height="0dp"
+            android:layout_width="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem3"
+            android:text="服饰"
+            android:layout_height="0dp"
+            android:layout_width="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabItem4"
+            android:text="图书"
+            android:layout_height="0dp"
+            android:layout_width="0dp" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- 商品列表 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 底部选项 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f0f0f0"
+        android:padding="16dp">
+
+        <!-- 主页按钮 -->
+        <Button
+            android:id="@+id/buttonHome"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zhuye"
+            android:textSize="16sp"
+            android:layout_marginLeft="100dp"/>
+
+        <!-- 个人中心按钮 -->
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/geren"
+            android:textSize="16sp"
+            android:layout_marginLeft="140dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    >
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/textViewAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="管理员功能"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- 功能按钮区域 -->
+    <LinearLayout
+        android:id="@+id/adminButtonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewAdminTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 管理用户 -->
+        <Button
+            android:id="@+id/buttonManageUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理用户"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 管理商品 -->
+        <Button
+            android:id="@+id/buttonManageProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="管理商品"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 查看订单 -->
+        <Button
+            android:id="@+id/buttonViewOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看订单"
+            android:textSize="16sp"
+            android:background="#FDF3E6"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 退出管理员页面 -->
+        <Button
+            android:id="@+id/buttonExitAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出管理员界面"
+            android:textSize="16sp"
+            android:background="#FF6347"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

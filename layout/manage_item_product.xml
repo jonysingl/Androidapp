@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_vertical">
+
+    <!-- 商品头像 -->
+    <ImageView
+        android:id="@+id/item_product_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="商品头像"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray"
+        android:layout_marginEnd="12dp" />
+
+    <!-- 商品信息垂直布局 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 商品ID -->
+        <TextView
+            android:id="@+id/item_product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品ID: 12345"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- 商品名称 -->
+        <TextView
+            android:id="@+id/item_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称: 示例商品"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <!-- 商品价格 -->
+        <TextView
+            android:id="@+id/item_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格: ¥99.00"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+        <!-- 发布者 -->
+        <TextView
+            android:id="@+id/item_product_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布者: 张三"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- 删除按钮 -->
+    <Button
+        android:id="@+id/button_delete_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white" />
+</LinearLayout>

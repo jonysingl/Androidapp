@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- 用户名 -->
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="用户名: 张三"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonDeleteUser"
+        android:paddingStart="8dp" />
+
+    <!-- 手机号 -->
+    <TextView
+        android:id="@+id/textViewUserPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="手机号: 12345678901"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName"
+        app:layout_constraintEnd_toStartOf="@id/buttonDeleteUser"
+        android:paddingStart="8dp" />
+
+    <!-- 邮箱 -->
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="邮箱: example@example.com"
+        android:textSize="14sp"
+        android:textColor="#555555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserPhone"
+        app:layout_constraintEnd_toStartOf="@id/buttonDeleteUser"
+        android:paddingStart="8dp" />
+
+
+    <!-- 删除按钮 -->
+    <Button
+        android:id="@+id/buttonDeleteUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="14sp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
